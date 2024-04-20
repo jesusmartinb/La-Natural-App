@@ -7,9 +7,9 @@
       "email": "jesusmartinb64@gmail.com"
     }
   ],
-  "productos": [
+  "products": [
     {
-      "productoId": 1,
+      "id": 1,
       "nombre": "Hierbabuena",
       "texto": "La hierbabuena es muy efectiva en los tratamientos de los dolores menstruales y para tratar problemas nerviosos, ya que es relajante.",
       "marca": "Soria Natural",
@@ -22,7 +22,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 2,
+      "id": 2,
       "nombre": "Lavanda",
       "texto": "La lavanda actúa como tranquilizante ante estados emocionales de nerviosismo. Su aroma te tranquilizará y ayudará a conciliar el sueño.",
       "marca": "Soria Natural",
@@ -35,7 +35,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 3,
+      "id": 3,
       "nombre": "Manzanilla",
       "texto": "Ayuda a una buena digestión. Mejora la digestión, relajando los músculos intestinales y evitando la indigestión. Combate la pesadez y te hace sentir mejor.",
       "marca": "Soria Natural",
@@ -48,7 +48,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 4,
+      "id": 4,
       "nombre": "Tomillo",
       "marca": "Josenea",
       "texto":"Propiedades antiespasmódica, expectorante y antiséptica, está especialmente indicado en el tratamiento de ciertas afecciones de las vías respiratorias altas, particularmente las que cursan con tos irritativa, laringitis, bronquitis, asma, enfisema y gripe.",
@@ -61,7 +61,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 5,
+      "id": 5,
       "nombre": "Estragón",
       "texto":"Es una planta muy nutritiva que más allá de dar sabor a las comidas, cuida de nuestro organismo. Sobresale por sus propiedades digestivas, especialmente tras ingestas pesadas, al tiempo que regula el tránsito intestinal gracias a su contenido en fibra.",
       "marca": "Josenea",
@@ -74,7 +74,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 6,
+      "id": 6,
       "nombre": "Albahaca",
       "texto":"La albahaca es muy rica en calcio, básico para reforzar huesos y dientes, y potasio, que regula el contenido de agua de las células y su movimiento, además de moderar el sistema nervioso y muscular e intervenir en la construcción de proteínas.",
       "marca": "Artemis",
@@ -87,7 +87,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 7,
+      "id": 7,
       "nombre": "Curcuma",
       "texto":"Es un potente antiinflamatorio es útil para tratar el dolor y las enfermedades inflamatorias: artritis, artrosis, enfermedad periodontal, etc. Previene el parkinson y el alzhéimer. Es útil para tratar las enfermedades gastrointestinales, como la fibrosis hepática y la enfermedad inflamatoria intestinal.",
       "marca": "Josenea",
@@ -100,7 +100,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 8,
+      "id": 8,
       "nombre": "Jengibre",
       "texto":"Tiene potentes propiedades antisépticas, antioxidantes, expectorantes, antiinflamatorias y antimicrobianas; además de gran contenido de hierro, vitamina C y polifenoles, entre otros. El jingerol estimula la transpiración y la circulación sanguínea, dando energía al cuerpo y promoviendo la desintoxicación del mismo.",
       "marca": "Josenea",
@@ -113,7 +113,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 9,
+      "id": 9,
       "nombre": "Oregano",
       "texto":"Sus propiedades medicinales (alto contenido en minerales y ácidos) ayudan a disminuir dolores de cabeza, estómago, garganta, articulaciones y muelas. Contribuyen igualmente a prevenir problemas cardíacos, digestivos y de estreñimiento. Asimismo, alivian la tos, asma y resfriados.",
       "marca": "Artemis",
@@ -126,7 +126,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 10,
+      "id": 10,
       "nombre": "Té kukicha",
       "texto": "El té kukicha es uno de los preferidos por los japoneses para acompañar el sushi. Al contener los tallos y ramitas menos teína que las hojas, el té kukicha es menos estimulante que otros tés verdes, esto lo hace una gran opción como té para tomar antes de dormir o para personas mayores.",
       "marca": "Yogi Tea",
@@ -139,7 +139,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 11,
+      "id": 11,
       "nombre": "Té matcha",
       "texto": "Los componentes del té matcha aportan varios beneficios al organismo: Suministra energía evitando el nerviosismo. Puede reducir la ansiedad y el estrés. Mejora el estado de la piel, las uñas y los tejidos",
       "marca": "Yogi Tea",
@@ -152,7 +152,7 @@
       "cantidad": 1
     },
     {
-      "productoId": 12,
+      "id": 12,
       "nombre": "Té verde",
       "texto":"Previene el envejecimiento y fortalece el sistema de defensas del ser humano.- Contribuye a regular el proceso de digestión y regula los niveles de colesterol. Evita la formación coágulos en la sangre.",
       "marca": "Yogi Tea",
