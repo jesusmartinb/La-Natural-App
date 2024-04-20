@@ -1,1 +1,55 @@
-<p>product-page works!</p>
+<ng-template #divLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner> </mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
+
+<div *ngIf="product; else divLoading" class="grid p-2">
+  <mat-card class="col-12 sm:col-6">
+    <mat-card-header>
+      <mat-card-title>{{ product.nombre }}</mat-card-title>
+      <mat-card-subtitle>{{ product.marca }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img
+      mat-card-image
+      [src]="product | productImage"
+      [alt]="product.nombre"
+      [title]="product.nombre"
+    />
+  </mat-card>
+
+  <mat-card class="col-12 sm:col-6">
+    <mat-card-header>
+      <mat-card-title>Información</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list class="mb-2">
+        <mat-list-item>
+          <strong matListItemTitle>Presentación:</strong>
+          <span matListItemLine>{{ product.presentacion }}</span>
+        </mat-list-item>
+        <mat-list-item
+          ><strong matListItemTitle>Precio:</strong>
+          <span matListItemLine>{{ product.preciobaseeu }}</span></mat-list-item
+        >
+        <mat-list-item
+          ><strong matListItemTitle>Categoría:</strong>
+          <span matListItemLine>{{ product.categoria }}</span></mat-list-item
+        >
+        <mat-list-item
+          ><strong matListItemTitle>Subcategoría:</strong>
+          <span matListItemLine>{{ product.subcategoria }}</span></mat-list-item
+        >
+        <mat-list-item class="h-full"
+          ><span matListItemTitle>Descripción:</span>
+          <span class="manual-break">{{ product.texto }}</span></mat-list-item
+        >
+      </mat-list>
+
+      <button mat-button color="warn" (click)="goBack()">Regresar</button>
+    </mat-card-content>
+  </mat-card>
+</div>

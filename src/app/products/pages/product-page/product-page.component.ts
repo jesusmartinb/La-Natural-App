@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { switchMap } from 'rxjs';
+import { delay, switchMap } from 'rxjs';
 import { Product } from '../../interfaces/product.interface';
 
 @Component({
@@ -22,14 +22,18 @@ export class ProductPageComponent implements OnInit{
   ngOnInit(): void {
     this.activatedRoute.params
       .pipe(
+        delay(1500),
         switchMap(({ id }) => this.productsService.getProductById(id)),
       ).subscribe(product => {
         if(!product) return this.router.navigate(['/products/list']);
 
         this.product = product;
-        console.log({product})
         return;
     });
+  }
+
+  goBack(): void {
+    this.router.navigate(['/products/list']);
   }
 
 }
