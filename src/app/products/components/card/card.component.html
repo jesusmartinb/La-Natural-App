@@ -1,0 +1,42 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ product.nombre }}</mat-card-title>
+    <mat-card-subtitle>{{ product.marca }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <!-- TODO: IMAGEN -->
+
+  <mat-card-content class="mt-2">
+    <h4>{{ product.presentacion }}</h4>
+    <p>
+      <strong>Precio</strong> {{ product.preciobaseeu | currency : "EUR" }}
+      <br />
+      <mat-chip-listbox>
+        <mat-chip *ngFor="let category of product.categoria | slice : 0 : 3">
+          {{ category }}
+        </mat-chip>
+      </mat-chip-listbox>
+    </p>
+  </mat-card-content>
+
+  <mat-divider></mat-divider>
+
+  <mat-card-actions>
+    <button
+      mat-button
+      mat-raised
+      color="primary"
+      [routerLink]="['/products/edit', product.id]"
+    >
+      <mat-icon>edit</mat-icon>
+      Editar
+    </button>
+
+    <span class="spacer"></span>
+
+    <button mat-button mat-raised [routerLink]="['/products', product.id]">
+      <mat-icon>more_horiz</mat-icon>
+      Más
+    </button>
+  </mat-card-actions>
+</mat-card>
