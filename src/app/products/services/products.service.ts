@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, catchError, of } from 'rxjs';
 import { Product } from '../interfaces/product.interface';
 import { environments } from '../../../environments/environments';
 
@@ -14,5 +14,13 @@ export class ProductsService {
   getProducts(): Observable<Product[]> {
 
     return this.httpClient.get<Product[]>(`${this.baseUrl}/products`);
+  }
+
+  getProductById(id: string): Observable<Product|undefined> {
+
+    return this.httpClient.get<Product>(`${this.baseUrl}/products/${id}`)
+      .pipe(
+        catchError(error => of(undefined) )
+      )
   }
 }
