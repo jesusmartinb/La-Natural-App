@@ -10,6 +10,7 @@ export interface Product {
   categoria:    string[];
   subcategoria: string[];
   cantidad:     number;
+  alt_img?:     string;
 }
 
 export enum Presentacion {

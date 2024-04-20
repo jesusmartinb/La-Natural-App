@@ -16,7 +16,7 @@
       "presentacion": "400gr.",
       "preciobaseeu": 10,
       "descuento": 10,
-      "imagen": "assets/img/hierbabuena.jpg",
+      "imagen": "assets/img/products/hierbabuena.jpg",
       "categoria": ["Sistema Nervioso", "Sistema Hormonal"],
       "subcategoria": ["Relajante", "Menstruación"],
       "cantidad": 1
@@ -29,7 +29,7 @@
       "presentacion": "400gr.",
       "preciobaseeu": 15,
       "descuento": 15,
-      "imagen": "assets/img/lavanda.jpg",
+      "imagen": "assets/img/products/lavanda.jpg",
       "categoria": ["Sistema Nervioso"],
       "subcategoria": ["Relajante", "Imsonio"],
       "cantidad": 1
@@ -42,7 +42,7 @@
       "presentacion": "300gr.",
       "preciobaseeu": 20,
       "descuento": 5,
-      "imagen": "assets/img/manzanilla.png",
+      "imagen": "assets/img/products/manzanilla.jpg",
       "categoria": ["Sistema Digestivo"],
       "subcategoria": ["Digestivo"],
       "cantidad": 1
@@ -55,20 +55,20 @@
       "presentacion": "300gr.",
       "preciobaseeu": 35,
       "descuento": 7,
-      "imagen": "assets/img/tomillo.jpg",
+      "imagen": "assets/img/products/tomillo.jpg",
       "categoria": ["Sistema Respiratorio"],
       "subcategoria": ["Molestias Garganta", "Antitusivos", "Mucolíticos", "Respiratorio"],
       "cantidad": 1
     },
     {
       "id": 5,
-      "nombre": "Estragón",
+      "nombre": "Estragon",
       "texto":"Es una planta muy nutritiva que más allá de dar sabor a las comidas, cuida de nuestro organismo. Sobresale por sus propiedades digestivas, especialmente tras ingestas pesadas, al tiempo que regula el tránsito intestinal gracias a su contenido en fibra.",
       "marca": "Josenea",
       "presentacion": "300gr.",
       "preciobaseeu": 45,
       "descuento": 25,
-      "imagen": "assets/img/estragon.webp",
+      "imagen": "assets/img/products/estragon.jpg",
       "categoria": ["Sistema Digestivo"],
       "subcategoria": ["Transito Intestinal", "Digestivo"],
       "cantidad": 1
@@ -81,7 +81,7 @@
       "presentacion": "300gr.",
       "preciobaseeu": 8,
       "descuento": 5,
-      "imagen": "assets/img/albahaca.jpg",
+      "imagen": "assets/img/products/albahaca.jpg",
       "categoria": ["Sistema Nervioso", "Sistema Óseo y Articular"],
       "subcategoria": ["Regulador", "Huesos", "Articulaciones"],
       "cantidad": 1
@@ -94,7 +94,7 @@
       "presentacion": "300gr.",
       "preciobaseeu": 60,
       "descuento": 18,
-      "imagen": "assets/img/curcuma.webp",
+      "imagen": "assets/img/products/curcuma.jpg",
       "categoria": ["Sistema Digestivo", "Sistema Óseo y Articular", "General"],
       "subcategoria": ["Digestivo", "Antiinflamatorio"],
       "cantidad": 1
@@ -107,7 +107,7 @@
       "presentacion": "300gr.",
       "preciobaseeu": 17,
       "descuento": 5,
-      "imagen": "assets/img/jengibre.jpg",
+      "imagen": "assets/img/products/jengibre.jpg",
       "categoria": ["General"],
       "subcategoria": ["Antiinflamatorio"],
       "cantidad": 1
@@ -120,7 +120,7 @@
       "presentacion": "300gr.",
       "preciobaseeu": 32,
       "descuento": 12,
-      "imagen": "assets/img/oregano.jpg",
+      "imagen": "assets/img/products/oregano.jpg",
       "categoria": ["Genérico"],
       "subcategoria": ["Dolor"],
       "cantidad": 1
@@ -133,7 +133,7 @@
       "presentacion": "300gr.",
       "preciobaseeu": 40,
       "descuento": 10,
-      "imagen": "assets/img/kukicha2.jpg",
+      "imagen": "assets/img/products/kukicha.jpg",
       "categoria": ["Sistema Nervioso"],
       "subcategoria": ["Relajante"],
       "cantidad": 1
@@ -146,7 +146,7 @@
       "presentacion": "300gr.",
       "preciobaseeu": 25,
       "descuento": 25,
-      "imagen": "assets/img/matcha.jpg",
+      "imagen": "assets/img/products/matcha.jpg",
       "categoria": ["Sistema Nervioso"],
       "subcategoria": ["Relajante"],
       "cantidad": 1
@@ -159,7 +159,7 @@
       "presentacion": "300gr.",
       "preciobaseeu": 23,
       "descuento": 15,
-      "imagen": "assets/img/te_verde.webp",
+      "imagen": "assets/img/products/verde.jpg",
       "categoria": ["Sistema Inmune"],
       "subcategoria": ["Defensas"],
       "cantidad": 1
