@@ -23,4 +23,8 @@ export class ProductsService {
         catchError(error => of(undefined) )
       )
   }
+
+  getSuggestions(query: string): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(`${this.baseUrl}/products?q=${query}&_limit=6`);
+  }
 }
