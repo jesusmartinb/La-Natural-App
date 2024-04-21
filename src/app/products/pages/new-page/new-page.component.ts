@@ -45,5 +45,20 @@ export class NewPageComponent {
     // })
 
     if (this.productForm.invalid) return;
+
+    if(this.currentProduct.id !== 0) {
+      this.productsService.updateProduct(this.currentProduct)
+        .subscribe(product => {
+          // TODO: mostrar snackbar
+        });
+
+        return;
+    }
+
+    this.productsService.addProduct(this.currentProduct)
+      .subscribe(product => {
+        // TODO: mostrar snackbar y navegar a /products/edit/product.id
+
+    });
   }
 }
