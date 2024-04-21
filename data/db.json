@@ -49,7 +49,7 @@
       "nombre": "Manzanilla",
       "texto": "Ayuda a una buena digestión. Mejora la digestión, relajando los músculos intestinales y evitando la indigestión. Combate la pesadez y te hace sentir mejor.",
       "marca": "Soria Natural",
-      "presentacion": "300gr.",
+      "presentacion": "400gr.",
       "preciobaseeu": 20,
       "descuento": 5,
       "imagen": "assets/img/products/manzanilla.jpg",
@@ -59,7 +59,8 @@
       "subcategoria": [
         "Digestivo"
       ],
-      "cantidad": 1
+      "cantidad": 1,
+      "alt_img": null
     },
     {
       "id": 4,

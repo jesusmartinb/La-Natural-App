@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Presentacion, Product } from '../../interfaces/product.interface';
 import { ProductsService } from '../../services/products.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-new-page',
   templateUrl: './new-page.component.html',
   styleUrl: './new-page.component.css'
 })
-export class NewPageComponent {
+export class NewPageComponent implements OnInit {
 
   public productForm = new FormGroup({
     id: new FormControl<number>(0),
@@ -30,12 +32,32 @@ export class NewPageComponent {
     { id: '400gr.', desc: '400gr.'},
   ];
 
-  constructor( private productsService: ProductsService) {}
+  constructor(
+    private productsService: ProductsService,
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+  ) {}
 
   get currentProduct(): Product {
     const product = this.productForm.value as Product;
 
     return product;
+  }
+
+  ngOnInit(): void {
+
+    if (!this.router.url.includes('edit')) return; // Si no estamos en la ruta /products/edit, no hacemos nada
+
+    // Si estamos en la ruta /products/edit, obtenemos el id del producto a editar y lo cargamos en el formulario
+    this.activatedRoute.params
+      .pipe(
+        switchMap(({ id }) => this.productsService.getProductById(id)),
+      ).subscribe(product => {
+        if (!product) return this.router.navigateByUrl('/');
+
+        this.productForm.reset(product);
+        return;
+      });
   }
 
   onSubmit(): void {
