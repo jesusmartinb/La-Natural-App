@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NewPageComponent {
 
+  public presentacion = [
+    { id: '300gr.', desc: '300gr.'},
+    { id: '400gr.', desc: '400gr.'},
+  ];
 }
