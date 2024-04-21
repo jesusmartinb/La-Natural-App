@@ -41,8 +41,8 @@ export class ProductsService {
   deleteProductById(id: number): Observable<boolean> {
     return this.httpClient.delete(`${this.baseUrl}/products/${id}`)
       .pipe(
+        map((resp) => true),
         catchError((error) => of(false)),
-        map((resp) => true)
       );
   }
 }

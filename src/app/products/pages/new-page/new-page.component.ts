@@ -3,8 +3,10 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { Presentacion, Product } from '../../interfaces/product.interface';
 import { ProductsService } from '../../services/products.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { switchMap } from 'rxjs';
+import { filter, switchMap, tap } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-new-page',
@@ -37,7 +39,8 @@ export class NewPageComponent implements OnInit {
     private productsService: ProductsService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private dialog: MatDialog,
   ) {}
 
   get currentProduct(): Product {
@@ -84,6 +87,25 @@ export class NewPageComponent implements OnInit {
         this.router.navigate(['/products/edit', product.id]);
         this.showSnackBar(`${product.nombre} añadido correctamente`);
     });
+  }
+
+  onDeleteProduct(): void {
+
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+      data: this.productForm.value,
+    });
+
+    dialogRef.afterClosed()
+      .pipe(
+        filter((result: boolean) => result),
+        switchMap( () => this.productsService.deleteProductById(this.currentProduct.id) ),
+        filter((wasDeleted: boolean) => wasDeleted),
+      )
+      .subscribe( () => {
+        this.router.navigate(['/products']);
+        this.showSnackBar(`${this.currentProduct.nombre} eliminado correctamente`);
+      });
+
   }
 
   showSnackBar(message: string): void {
