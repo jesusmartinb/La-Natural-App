@@ -4,6 +4,7 @@ import { Presentacion, Product } from '../../interfaces/product.interface';
 import { ProductsService } from '../../services/products.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-new-page',
@@ -36,6 +37,7 @@ export class NewPageComponent implements OnInit {
     private productsService: ProductsService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
+    private snackBar: MatSnackBar
   ) {}
 
   get currentProduct(): Product {
@@ -71,7 +73,7 @@ export class NewPageComponent implements OnInit {
     if(this.currentProduct.id !== 0) {
       this.productsService.updateProduct(this.currentProduct)
         .subscribe(product => {
-          // TODO: mostrar snackbar
+          this.showSnackBar(`${product.nombre} actualizado correctamente`)
         });
 
         return;
@@ -79,8 +81,15 @@ export class NewPageComponent implements OnInit {
 
     this.productsService.addProduct(this.currentProduct)
       .subscribe(product => {
-        // TODO: mostrar snackbar y navegar a /products/edit/product.id
-
+        this.router.navigate(['/products/edit', product.id]);
+        this.showSnackBar(`${product.nombre} añadido correctamente`);
     });
   }
+
+  showSnackBar(message: string): void {
+    this.snackBar.open(message, 'Cerrar', {
+      duration: 2500,
+    });
+  }
+
 }
