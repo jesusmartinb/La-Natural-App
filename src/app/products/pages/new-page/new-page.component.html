@@ -90,7 +90,13 @@
   </div>
   <div class="col-12 sm:col-6">
     <mat-card>
-      <img src="" alt="imagen del producto" mat-card-image />
+      <img
+        [src]="currentProduct | productImage"
+        alt="imagen del producto"
+        mat-card-image
+      />
     </mat-card>
   </div>
 </div>
+
+<pre>{{ currentProduct | json }}</pre>

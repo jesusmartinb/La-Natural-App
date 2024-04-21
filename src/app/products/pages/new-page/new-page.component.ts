@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Presentacion } from '../../interfaces/product.interface';
+import { Presentacion, Product } from '../../interfaces/product.interface';
+import { ProductsService } from '../../services/products.service';
 
 @Component({
   selector: 'app-new-page',
@@ -29,10 +30,20 @@ export class NewPageComponent {
     { id: '400gr.', desc: '400gr.'},
   ];
 
+  constructor( private productsService: ProductsService) {}
+
+  get currentProduct(): Product {
+    const product = this.productForm.value as Product;
+
+    return product;
+  }
+
   onSubmit(): void {
-    console.log({
-      formIsValid: this.productForm.valid,
-      value: this.productForm.value,
-    })
+    // console.log({
+    //   formIsValid: this.productForm.valid,
+    //   value: this.productForm.value,
+    // })
+
+    if (this.productForm.invalid) return;
   }
 }
