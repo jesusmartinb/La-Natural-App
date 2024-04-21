@@ -28,4 +28,11 @@ export class NewPageComponent {
     { id: '300gr.', desc: '300gr.'},
     { id: '400gr.', desc: '400gr.'},
   ];
+
+  onSubmit(): void {
+    console.log({
+      formIsValid: this.productForm.valid,
+      value: this.productForm.value,
+    })
+  }
 }
