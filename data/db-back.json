@@ -1,167 +1,223 @@
 {
-
   "users": [
     {
       "id": 1,
-      "usuario": "Jesús Martín",
+      "user": "Jesús Martín",
       "email": "jesusmartinb64@gmail.com"
     }
   ],
-  "productos": [
+  "products": [
     {
-      "productoId": 1,
+      "id": 1,
       "nombre": "Hierbabuena",
       "texto": "La hierbabuena es muy efectiva en los tratamientos de los dolores menstruales y para tratar problemas nerviosos, ya que es relajante.",
       "marca": "Soria Natural",
       "presentacion": "400gr.",
       "preciobaseeu": 10,
       "descuento": 10,
-      "imagen": "assets/img/hierbabuena.jpg",
-      "categoria": ["Sistema Nervioso", "Sistema Hormonal"],
-      "subcategoria": ["Relajante", "Menstruación"],
+      "imagen": "assets/img/products/hierbabuena.jpg",
+      "categoria": [
+        "Sistema Nervioso",
+        "Sistema Hormonal"
+      ],
+      "subcategoria": [
+        "Relajante",
+        "Menstruación"
+      ],
       "cantidad": 1
     },
     {
-      "productoId": 2,
+      "id": 2,
       "nombre": "Lavanda",
       "texto": "La lavanda actúa como tranquilizante ante estados emocionales de nerviosismo. Su aroma te tranquilizará y ayudará a conciliar el sueño.",
       "marca": "Soria Natural",
       "presentacion": "400gr.",
       "preciobaseeu": 15,
       "descuento": 15,
-      "imagen": "assets/img/lavanda.jpg",
-      "categoria": ["Sistema Nervioso"],
-      "subcategoria": ["Relajante", "Imsonio"],
+      "imagen": "assets/img/products/lavanda.jpg",
+      "categoria": [
+        "Sistema Nervioso"
+      ],
+      "subcategoria": [
+        "Relajante",
+        "Imsonio"
+      ],
       "cantidad": 1
     },
     {
-      "productoId": 3,
+      "id": 3,
       "nombre": "Manzanilla",
       "texto": "Ayuda a una buena digestión. Mejora la digestión, relajando los músculos intestinales y evitando la indigestión. Combate la pesadez y te hace sentir mejor.",
       "marca": "Soria Natural",
       "presentacion": "300gr.",
       "preciobaseeu": 20,
       "descuento": 5,
-      "imagen": "assets/img/manzanilla.png",
-      "categoria": ["Sistema Digestivo"],
-      "subcategoria": ["Digestivo"],
-      "cantidad": 1
+      "imagen": "assets/img/products/manzanilla.jpg",
+      "categoria": [
+        "Sistema Digestivo"
+      ],
+      "subcategoria": [
+        "Digestivo"
+      ],
+      "cantidad": 1,
+      "alt_img": null
     },
     {
-      "productoId": 4,
+      "id": 4,
       "nombre": "Tomillo",
       "marca": "Josenea",
-      "texto":"Propiedades antiespasmódica, expectorante y antiséptica, está especialmente indicado en el tratamiento de ciertas afecciones de las vías respiratorias altas, particularmente las que cursan con tos irritativa, laringitis, bronquitis, asma, enfisema y gripe.",
+      "texto": "Propiedades antiespasmódica, expectorante y antiséptica, está especialmente indicado en el tratamiento de ciertas afecciones de las vías respiratorias altas, particularmente las que cursan con tos irritativa, laringitis, bronquitis, asma, enfisema y gripe.",
       "presentacion": "300gr.",
       "preciobaseeu": 35,
       "descuento": 7,
-      "imagen": "assets/img/tomillo.jpg",
-      "categoria": ["Sistema Respiratorio"],
-      "subcategoria": ["Molestias Garganta", "Antitusivos", "Mucolíticos", "Respiratorio"],
+      "imagen": "assets/img/products/tomillo.jpg",
+      "categoria": [
+        "Sistema Respiratorio"
+      ],
+      "subcategoria": [
+        "Molestias Garganta",
+        "Antitusivos",
+        "Mucolíticos",
+        "Respiratorio"
+      ],
       "cantidad": 1
     },
     {
-      "productoId": 5,
-      "nombre": "Estragón",
+      "id": 5,
+      "nombre": "Estragon",
       "texto":"Es una planta muy nutritiva que más allá de dar sabor a las comidas, cuida de nuestro organismo. Sobresale por sus propiedades digestivas, especialmente tras ingestas pesadas, al tiempo que regula el tránsito intestinal gracias a su contenido en fibra.",
       "marca": "Josenea",
       "presentacion": "300gr.",
       "preciobaseeu": 45,
       "descuento": 25,
-      "imagen": "assets/img/estragon.webp",
+      "imagen": "assets/img/products/estragon.jpg",
       "categoria": ["Sistema Digestivo"],
       "subcategoria": ["Transito Intestinal", "Digestivo"],
       "cantidad": 1
     },
     {
-      "productoId": 6,
+      "id": 6,
       "nombre": "Albahaca",
-      "texto":"La albahaca es muy rica en calcio, básico para reforzar huesos y dientes, y potasio, que regula el contenido de agua de las células y su movimiento, además de moderar el sistema nervioso y muscular e intervenir en la construcción de proteínas.",
+      "texto": "La albahaca es muy rica en calcio, básico para reforzar huesos y dientes, y potasio, que regula el contenido de agua de las células y su movimiento, además de moderar el sistema nervioso y muscular e intervenir en la construcción de proteínas.",
       "marca": "Artemis",
       "presentacion": "300gr.",
       "preciobaseeu": 8,
       "descuento": 5,
-      "imagen": "assets/img/albahaca.jpg",
-      "categoria": ["Sistema Nervioso", "Sistema Óseo y Articular"],
-      "subcategoria": ["Regulador", "Huesos", "Articulaciones"],
+      "imagen": "assets/img/products/albahaca.jpg",
+      "categoria": [
+        "Sistema Nervioso",
+        "Sistema Óseo y Articular"
+      ],
+      "subcategoria": [
+        "Regulador",
+        "Huesos",
+        "Articulaciones"
+      ],
       "cantidad": 1
     },
     {
-      "productoId": 7,
+      "id": 7,
       "nombre": "Curcuma",
-      "texto":"Es un potente antiinflamatorio es útil para tratar el dolor y las enfermedades inflamatorias: artritis, artrosis, enfermedad periodontal, etc. Previene el parkinson y el alzhéimer. Es útil para tratar las enfermedades gastrointestinales, como la fibrosis hepática y la enfermedad inflamatoria intestinal.",
+      "texto": "Es un potente antiinflamatorio es útil para tratar el dolor y las enfermedades inflamatorias: artritis, artrosis, enfermedad periodontal, etc. Previene el parkinson y el alzhéimer. Es útil para tratar las enfermedades gastrointestinales, como la fibrosis hepática y la enfermedad inflamatoria intestinal.",
       "marca": "Josenea",
       "presentacion": "300gr.",
       "preciobaseeu": 60,
       "descuento": 18,
-      "imagen": "assets/img/curcuma.webp",
-      "categoria": ["Sistema Digestivo", "Sistema Óseo y Articular", "General"],
-      "subcategoria": ["Digestivo", "Antiinflamatorio"],
+      "imagen": "assets/img/products/curcuma.jpg",
+      "categoria": [
+        "Sistema Digestivo",
+        "Sistema Óseo y Articular",
+        "General"
+      ],
+      "subcategoria": [
+        "Digestivo",
+        "Antiinflamatorio"
+      ],
       "cantidad": 1
     },
     {
-      "productoId": 8,
+      "id": 8,
       "nombre": "Jengibre",
-      "texto":"Tiene potentes propiedades antisépticas, antioxidantes, expectorantes, antiinflamatorias y antimicrobianas; además de gran contenido de hierro, vitamina C y polifenoles, entre otros. El jingerol estimula la transpiración y la circulación sanguínea, dando energía al cuerpo y promoviendo la desintoxicación del mismo.",
+      "texto": "Tiene potentes propiedades antisépticas, antioxidantes, expectorantes, antiinflamatorias y antimicrobianas; además de gran contenido de hierro, vitamina C y polifenoles, entre otros. El jingerol estimula la transpiración y la circulación sanguínea, dando energía al cuerpo y promoviendo la desintoxicación del mismo.",
       "marca": "Josenea",
       "presentacion": "300gr.",
       "preciobaseeu": 17,
       "descuento": 5,
-      "imagen": "assets/img/jengibre.jpg",
-      "categoria": ["General"],
-      "subcategoria": ["Antiinflamatorio"],
+      "imagen": "assets/img/products/jengibre.jpg",
+      "categoria": [
+        "General"
+      ],
+      "subcategoria": [
+        "Antiinflamatorio"
+      ],
       "cantidad": 1
     },
     {
-      "productoId": 9,
+      "id": 9,
       "nombre": "Oregano",
-      "texto":"Sus propiedades medicinales (alto contenido en minerales y ácidos) ayudan a disminuir dolores de cabeza, estómago, garganta, articulaciones y muelas. Contribuyen igualmente a prevenir problemas cardíacos, digestivos y de estreñimiento. Asimismo, alivian la tos, asma y resfriados.",
+      "texto": "Sus propiedades medicinales (alto contenido en minerales y ácidos) ayudan a disminuir dolores de cabeza, estómago, garganta, articulaciones y muelas. Contribuyen igualmente a prevenir problemas cardíacos, digestivos y de estreñimiento. Asimismo, alivian la tos, asma y resfriados.",
       "marca": "Artemis",
       "presentacion": "300gr.",
       "preciobaseeu": 32,
       "descuento": 12,
-      "imagen": "assets/img/oregano.jpg",
-      "categoria": ["Genérico"],
-      "subcategoria": ["Dolor"],
+      "imagen": "assets/img/products/oregano.jpg",
+      "categoria": [
+        "Genérico"
+      ],
+      "subcategoria": [
+        "Dolor"
+      ],
       "cantidad": 1
     },
     {
-      "productoId": 10,
+      "id": 10,
       "nombre": "Té kukicha",
       "texto": "El té kukicha es uno de los preferidos por los japoneses para acompañar el sushi. Al contener los tallos y ramitas menos teína que las hojas, el té kukicha es menos estimulante que otros tés verdes, esto lo hace una gran opción como té para tomar antes de dormir o para personas mayores.",
       "marca": "Yogi Tea",
       "presentacion": "300gr.",
       "preciobaseeu": 40,
       "descuento": 10,
-      "imagen": "assets/img/kukicha2.jpg",
-      "categoria": ["Sistema Nervioso"],
-      "subcategoria": ["Relajante"],
+      "imagen": "assets/img/products/kukicha.jpg",
+      "categoria": [
+        "Sistema Nervioso"
+      ],
+      "subcategoria": [
+        "Relajante"
+      ],
       "cantidad": 1
     },
     {
-      "productoId": 11,
+      "id": 11,
       "nombre": "Té matcha",
       "texto": "Los componentes del té matcha aportan varios beneficios al organismo: Suministra energía evitando el nerviosismo. Puede reducir la ansiedad y el estrés. Mejora el estado de la piel, las uñas y los tejidos",
       "marca": "Yogi Tea",
       "presentacion": "300gr.",
       "preciobaseeu": 25,
       "descuento": 25,
-      "imagen": "assets/img/matcha.jpg",
-      "categoria": ["Sistema Nervioso"],
-      "subcategoria": ["Relajante"],
+      "imagen": "assets/img/products/matcha.jpg",
+      "categoria": [
+        "Sistema Nervioso"
+      ],
+      "subcategoria": [
+        "Relajante"
+      ],
       "cantidad": 1
     },
     {
-      "productoId": 12,
+      "id": 12,
       "nombre": "Té verde",
-      "texto":"Previene el envejecimiento y fortalece el sistema de defensas del ser humano.- Contribuye a regular el proceso de digestión y regula los niveles de colesterol. Evita la formación coágulos en la sangre.",
+      "texto": "Previene el envejecimiento y fortalece el sistema de defensas del ser humano.- Contribuye a regular el proceso de digestión y regula los niveles de colesterol. Evita la formación coágulos en la sangre.",
       "marca": "Yogi Tea",
       "presentacion": "300gr.",
       "preciobaseeu": 23,
       "descuento": 15,
-      "imagen": "assets/img/te_verde.webp",
-      "categoria": ["Sistema Inmune"],
-      "subcategoria": ["Defensas"],
+      "imagen": "assets/img/products/verde.jpg",
+      "categoria": [
+        "Sistema Inmune"
+      ],
+      "subcategoria": [
+        "Defensas"
+      ],
       "cantidad": 1
     }
   ]
