@@ -5,6 +5,8 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { MaterialModule } from '../material/material.module';
+import { FormsModule } from '@angular/forms';
+// import { PerfilPageComponent } from './pages/perfil-page/perfil-page.component';
 
 
 
@@ -12,12 +14,14 @@ import { MaterialModule } from '../material/material.module';
   declarations: [
     LayoutPageComponent,
     LoginPageComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    // PerfilPageComponent
   ],
   imports: [
     CommonModule,
     AuthRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ]
 })
 export class AuthModule { }

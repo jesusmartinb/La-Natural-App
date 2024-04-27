@@ -8,7 +8,7 @@ const checkAuthStatus = (): boolean | Observable<boolean> => {
   const authService = inject(AuthService);
   const router = inject(Router);
 
-  return authService.checkAuthStatus()
+  return authService.checkAuthentication()
     .pipe(
       tap(isAuth => {
         if (!isAuth) router.navigate(['./auth/login']);
