@@ -3,6 +3,7 @@ import { FormControl } from '@angular/forms';
 import { Product } from '../../interfaces/product.interface';
 import { ProductsService } from '../../services/products.service';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-page',
@@ -15,7 +16,10 @@ export class SearchPageComponent {
   public products: Product[] = [];
   public selectedProduct?: Product;
 
-  constructor(private productsService: ProductsService) { }
+  constructor(
+    private productsService: ProductsService,
+    private router: Router
+  ) { }
 
   searchProduct(): void {
     const value: string = this.searchInput.value || '';
@@ -34,5 +38,7 @@ export class SearchPageComponent {
     this.searchInput.setValue(product.nombre);
 
     this.selectedProduct = product;
+
+    this.router.navigate(['/products', product.id]);
   }
 }

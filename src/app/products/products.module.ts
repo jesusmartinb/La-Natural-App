@@ -12,6 +12,7 @@ import { CardComponent } from './components/card/card.component';
 import { ProductImagePipe } from './pipes/product-image.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
+import { PerfilPageComponent } from '../auth/pages/perfil-page/perfil-page.component';
 
 
 @NgModule({
@@ -23,13 +24,14 @@ import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dial
     SearchPageComponent,
     CardComponent,
     ProductImagePipe,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    PerfilPageComponent
   ],
   imports: [
     CommonModule,
     ProductsRoutingModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
 export class ProductsModule { }
