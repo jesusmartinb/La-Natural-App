@@ -17,8 +17,12 @@
       <strong>Precio</strong> {{ product.preciobaseeu | currency : "EUR" }}
       <br />
       <mat-chip-listbox>
-        <mat-chip *ngFor="let category of product.categoria | slice : 0 : 3">
-          {{ category }}
+        <mat-chip
+          *ngFor="
+            let categoria of product.categorias.split(',') | slice : 0 : 3
+          "
+        >
+          {{ categoria }}
         </mat-chip>
       </mat-chip-listbox>
     </p>

@@ -24,8 +24,8 @@ export class NewPageComponent implements OnInit {
     preciobaseeu: new FormControl<number>(0),
     descuento: new FormControl<number>(0),
     imagen: new FormControl<string>(''),
-    categoria: new FormControl<string[]>(['']),
-    subcategoria: new FormControl<string[]>(['']),
+    categorias: new FormControl<string>(''),
+    subcategorias: new FormControl<string>(''),
     cantidad: new FormControl<number>(0),
     alt_img: new FormControl<string>(''),
   });

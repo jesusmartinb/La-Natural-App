@@ -16,11 +16,8 @@ export class LoginPageComponent {
   ) { }
 
   getData(pLoginForm: any): void {
-    console.log(pLoginForm.value);
     const user: User = pLoginForm.value;
-    console.log(user);
     this.authService.login(user).subscribe((response: any) => {
-      console.log(response);
       if (response.token) {
         localStorage.setItem('mitoken', response.token);
         localStorage.setItem('rol', 'admin');
